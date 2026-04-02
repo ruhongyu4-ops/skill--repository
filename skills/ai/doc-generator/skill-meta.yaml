@@ -1,0 +1,15 @@
+id: doc-generator
+name: Doc Generator
+version: "1.0.0"
+category: ai
+description: Generates documents from templates using AI
+owner: ruhongyu4-ops
+tags:
+  - docx
+  - report
+  - template
+```
+
+提交后再创建第二个文件，路径填：
+```
+skills/ai/doc-generator/SKILL.md
