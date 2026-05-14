@@ -1,0 +1,70 @@
+{
+  "name": "skillhub",
+  "description": "Internal AMD SkillHub marketplace",
+  "owner": {
+    "name": "SkillHub",
+    "email": "hru@amd.com"
+  },
+  "plugins": [
+    {
+      "name": "cgse-ai-newsletter",
+      "description": "This skill generates and sends the monthly SRDC CGSE \"AI In Engineering\" Newsletter. It should be used when the user asks to create, draft, or send the CGSE AI newsletter, AI engineering newsletter, or monthly newsletter. Handles live metrics capture, dynamic content sections, image sourcing, and Outlook-compatible HTML email delivery. Automated sends go only to hru@amd.com for manual forward; do not bulk-mail DLs unless the user explicitly requests it in that conversation.",
+      "version": "1.0.0",
+      "source": "./skills/document/cgse-ai-newsletter",
+      "skills": [
+        "./"
+      ],
+      "strict": false,
+      "category": "document",
+      "tags": [
+        "email-automation",
+        "outlook-html",
+        "newsletter-generation",
+        "distribution-control"
+      ],
+      "author": {
+        "name": "hru@amd.com"
+      }
+    },
+    {
+      "name": "doc-generator",
+      "description": "Generates documents from templates using AI",
+      "version": "1.0.0",
+      "source": "./skills/ai-prompt/doc-generator",
+      "skills": [
+        "./"
+      ],
+      "strict": false,
+      "category": "ai-prompt",
+      "tags": [
+        "docx",
+        "report",
+        "template"
+      ],
+      "author": {
+        "name": "ruhongyu4-ops"
+      }
+    },
+    {
+      "name": "pptx-generator",
+      "description": "Generate, edit, and read PowerPoint presentations. Create from scratch with PptxGenJS (cover, TOC, content, section divider, summary slides), edit existing PPTX via XML workflows, or extract text with markitdown. Triggers: PPT, PPTX, PowerPoint, presentation, slide, deck, slides.",
+      "version": "1.0.0",
+      "source": "./skills/document/pptx-generator",
+      "skills": [
+        "./"
+      ],
+      "strict": false,
+      "category": "document",
+      "tags": [
+        "pptx",
+        "presentation",
+        "automation",
+        "document-generation",
+        "slide-design"
+      ],
+      "author": {
+        "name": "hru@amd.com"
+      }
+    }
+  ]
+}
